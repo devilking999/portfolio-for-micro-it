@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayal Kurmi-Portfolio</title>
+    <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+    <meta name="description" content="Rayal Kurmi Portfolio - frontend Developer, Computer Engineering Student, and Tech Enthusiast.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+        }
+        /* Light mode styles */
+        body.light-mode {
+            background-color: #ededea; /* Light background */
+            color: #333; /* Dark text */
+        }
+        .light-mode .bg-gray-900 {
+            background-color: #ffffff; /* Lighter background for main sections */
+        }
+        .light-mode .bg-gray-800 {
+            background-color: #ededea; /* Lighter background for header/footer/cards */
+        }
+        .light-mode .text-white {
+            color: #333; /* Dark text */
+        }
+        .light-mode .text-gray-300 {
+            color: #555; /* Slightly darker gray text */
+        }
+        .light-mode .text-gray-400 {
+            color: #777; /* Even darker gray text */
+        }
+        .light-mode .border-gray-700 {
+            border-color: #ccc; /* Lighter border for avatar */
+        }
+        .light-mode .bg-gray-700 {
+            background-color: #d0d0d0; /* Lighter background for form inputs */
+            color: #333; /* Dark text for inputs */
+        }
+        .light-mode a.hover\:text-blue-400:hover {
+            color: #3b82f6; /* Blue hover text */
+        }
+        .light-mode .shadow-md {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+  
+    <header class="bg-gray-800 py-4">
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <h1 class="text-2xl font-semibold text-white">MY PORTFOLIO</h1>
+
+    <!-- Navigation and Resume Button Container -->
+    <div class="flex items-center space-x-6">
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+          <li><a href="#achievements" class="hover:text-blue-400 transition duration-300">Achievements</a></li>
+          <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Download Resume Button -->
+      <a href="RayalKurmiResume.pdf" download
+        class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 flex items-center text-sm">
+        <i class="fas fa-download mr-2"></i>Download Resume
+      </a>
+                </ul>
+                <button id="theme-toggle" title="theme-change" class="p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 transition duration-300">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="text-center">
+            <div class="avatar mx-auto mb-4 flex justify-center">
+                <img src="rayal.jpg" height="200" width="200" alt="Rayal Kurmi" class="rounded-full border-4 border-gray-700">
+            </div>
+            <h2 class="text-3xl font-semibold mb-2">Computer Engineering Student & Developer</h2>
+            <p class="text-gray-300 text-lg mb-4">I build applications with Python, C#.NET, and modern web technologies that solve real-world problems.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">View My Work</a>
+                <a href="#contact" class="bg-transparent border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white font-semibold py-3 px-6 rounded-full transition duration-300">Contact Me</a>
+            
+</div>
+        </section>
+
+        <section id="about-me" class="py-12">
+            <h2 class="text-3xl font-semibold text-left mb-8">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <p class="text-gray-300 text-lg mb-4 text-left">
+                        Hey there! I'm Rayal Kurmi — a passionate frontend Developer who finds joy in turning complex problems into clean, efficient code (and occasionally, caffeine into code too).
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4 text-left">
+                        I’m currently pursuing a Bachelor of Engineering in Computer Engineering at Aldel Education Trust’s St. John College of Engineering and Management. My journey has led me to build meaningful applications like Fair Share, a tool that helps track shared expenses without wrecking friendships. I’ve also gained hands-on experience as a frontend Developer , where I helped in making login pages and many more frontend developingand also i have knowledge about backend .
+
+My toolbox includes C/C++, Python, JavaScript, and Web Development. I enjoy blending creativity with code to build things that are both useful and fun.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4 text-left">
+                        When I’m not writing code, you’ll probably find me participating in technical paper presentations, competing in game jams, or wondering if “debugging” should count as a hobby. I'm a firm believer in continuous learning and currently exploring new realms in both web and game development.
+Let’s build something awesome—one semicolon at a time.
+
+
+                    </p>
+                </div>
+                <div>
+                    <div class="mt-8 space-y-4">
+                <div>
+                  <h4 class="text-gray-400 mb-1">Python</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-blue-500 h-3 rounded-full" style="width: 85%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-gray-400 mb-1">JavaScript</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-yellow-400 h-3 rounded-full" style="width: 75%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-gray-400 mb-1">C# / .NET</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-purple-500 h-3 rounded-full" style="width: 70%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-start mt-8 gap-6">
+  <!-- Left side: Local video -->
+  <div class="w-1/2">
+    <h3 class="text-lg font-semibold mb-2">🎥 My Favourite Video</h3>
+    <video controls width="100%" class="rounded-xl shadow-lg">
+      <source src="music.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+                    <div class="mt-8 flex justify-end">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">📍 Location</h3>
+    <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3899726183983!2d72.8439036!3d19.3017513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1d2623fd1fb%3A0xe3134ad80b335def!2s12%2C%20Gomes%20St%2C%20opp.%20Municipal%20Office%2C%20Bhayandar%2C%20Sripal%20Nagar%2C%20Bhayandar%20West%2C%20Mira%20Bhayandar%2C%20Maharashtra%20401101!5e0!3m2!1sen!2sin!4v1716366985461!5m2!1sen!2sin"
+  width="300"
+  height="250"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+  </div>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-12 bg-gray-900">
+  <h2 class="text-3xl font-bold text-center text-white mb-12">🚀 My Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+    
+    <!-- Project Card 1 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Fair Share Application</h3>
+      <p class="text-green-300 mb-2 relative z-10">react.js , sql ,.net Database</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">VS Code + Extensions for frontend</h3>
+      <p class="text-blue-300 mb-2 relative z-10">C#.NET, SQL Server</p>
+      <p class="text-gray-300 relative z-10">frontend development</p>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-yellow-400 via-pink-400 to-red-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Task Management App</h3>
+      <p class="text-pink-300 mb-2 relative z-10">html,css,java</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+        <section id="achievements" class="py-12">
+            <h2 class="text-3xl font-semibold text-center mb-8">Achievements & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">SQL.net </h3>
+                        <p class="text-gray-300 mb-4">java programming</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">GameJam.js Participant</h3>
+                        <p class="text-gray-300 mb-4">itch.io GameJam.js 2025</p>
+                        <p class="text-gray-400">Participated in itch.io GameJam.js 2025, showcasing game development skills...and building web games</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12">
+            <h2 class="text-3xl font-semibold text-center mb-8">Connect With Me</h2>
+            <div class="flex justify-center items-center gap-6 mb-8">
+                <a href="https://www.linkedin.com/in/rayal-kurmi-514b48297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-blue-400 transition duration-300" title="LinkedIn">
+                <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/cosmicdreamer_320/" class="hover:text-blue-400 transition duration-300" title="Instagram">
+                <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="mailto:rayalkurmi32@gmail.com" class="hover:text-blue-400 transition duration-300" title="Email">
+                <i class="far fa-envelope text-xl"></i>
+                </a>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <h3 class="text-xl font-semibold mb-4">Random Programming Joke</h3>
+                <p id="joke-content" class="text-gray-300 mb-4">Loading joke...</p>
+                <button id="new-joke-btn" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">New Joke</button>
+            </div>
+              <div class="bg-gray-800 rounded-lg shadow-md p-6 mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-left">Get in Touch</h3>
+                <p class="text-gray-300 mb-4 text-left">Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
+                <form id="contact-form">
+    <div class="mb-4 hidden">
+        <!-- Honeypot field (spam bot trap) -->
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website">
+    </div>
+    <input type="text" id="name" name="name" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Your Name">
+
+<input type="email" id="email" name="email" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Your Email">
+
+<input type="text" id="subject" name="subject"
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Subject">
+
+<textarea id="message" name="message" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700 h-32 resize-y"
+  placeholder="Your Message"></textarea>
+
+    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Send Message</button>
+</form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-4 text-center">
+        <p class="text-gray-400">© 2025 Rayal Kurmi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Theme toggle functionality
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check for saved theme in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+            if (savedTheme === 'light-mode') {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light-mode');
+            } else {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.removeItem('theme'); // Remove 'light-mode' if switching back to dark
+            }
+        });
+
+        // Joke API integration
+        const jokeContent = document.getElementById('joke-content');
+        const newJokeBtn = document.getElementById('new-joke-btn');
+
+        async function fetchJoke() {
+            jokeContent.textContent = 'Loading joke...'; // Show loading text
+            try {
+                const response = await fetch('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist,sexist,explicit&type=single');
+                const data = await response.json();
+                if (data.joke) {
+                    jokeContent.textContent = data.joke;
+                } else {
+                    jokeContent.textContent = 'Failed to fetch a joke. Please try again!';
+                }
+            } catch (error) {
+                console.error('Error fetching joke:', error);
+                jokeContent.textContent = 'Failed to fetch a joke. Please try again!';
+            }
+        }
+
+        // Fetch a joke when the page loads
+        document.addEventListener('DOMContentLoaded', fetchJoke);
+
+        // Fetch a new joke when the button is clicked
+        newJokeBtn.addEventListener('click', fetchJoke);
+
+        // Form submission with simple validation and alert
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Honeypot check
+    if (document.getElementById('website').value !== "") {
+        alert("Spam detected. Submission blocked.");
+        return;
+    }
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill out all required fields.");
+        return;
+    }
+
+    // Simulate successful submission
+    alert("Thank you, " + name + "! Your message has been sent.");
+    this.reset();
+});
+
+    </script>
+</body>
+</html>
